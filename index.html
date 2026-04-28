@@ -695,7 +695,7 @@ function calc() {
   var adjBW = bw * corr;
   var conc = getConc();
   var recDose = getRecDose(selBCS);
-  var stdDose = species === 'dog' ? 600 : 660;
+  var stdDose = 600;  // 개·고양이 모두 BCS5 기준 600 mgI/kg (= 2.0 mL/kg)
 
   document.getElementById('bw-badge').textContent = bw.toFixed(1) + ' kg';
 
@@ -750,7 +750,7 @@ function renderRefTable() {
   var data = getData();
   var bw = getBW();
   var conc = getConc();
-  var stdDose = species === 'dog' ? 600 : 660;
+  var stdDose = 600;  // 개·고양이 모두 BCS5 기준 600 mgI/kg (= 2.0 mL/kg)
   var maxVol = species === 'dog' ? 150 : 30;
 
   var html = '<thead><tr>' +
