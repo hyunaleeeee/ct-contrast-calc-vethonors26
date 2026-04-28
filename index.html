@@ -575,26 +575,26 @@ var species = 'dog';
 var selBCS = 5;
 
 var dogBCS = [
-  { bcs:1, fat:5,  label:'극도저체중', short:'극저', color:'#F7C1C1', tc:'#791F1F', bg:'#FCEBEB' },
-  { bcs:2, fat:10, label:'저체중',     short:'저체중', color:'#F0997B', tc:'#712B13', bg:'#FAECE7' },
-  { bcs:3, fat:15, label:'마름',       short:'마름',   color:'#EF9F27', tc:'#633806', bg:'#FAEEDA' },
-  { bcs:4, fat:20, label:'정상하한',   short:'정상-',  color:'#97C459', tc:'#27500A', bg:'#EAF3DE' },
-  { bcs:5, fat:25, label:'정상',       short:'정상',   color:'#1D9E75', tc:'#04342C', bg:'#E1F5EE' },
-  { bcs:6, fat:30, label:'정상상한',   short:'정상+',  color:'#378ADD', tc:'#042C53', bg:'#E6F1FB' },
-  { bcs:7, fat:35, label:'과체중',     short:'과체중', color:'#7F77DD', tc:'#26215C', bg:'#EEEDFE' },
-  { bcs:8, fat:45, label:'비만',       short:'비만',   color:'#D4537E', tc:'#4B1528', bg:'#FBEAF0' },
-  { bcs:9, fat:55, label:'고도비만',   short:'고비만', color:'#E24B4A', tc:'#501313', bg:'#FCEBEB' },
+  { bcs:1, fat:5,  corr:1.10, label:'극도저체중', short:'극저', color:'#F7C1C1', tc:'#791F1F', bg:'#FCEBEB' },
+  { bcs:2, fat:10, corr:1.05, label:'저체중',     short:'저체중', color:'#F0997B', tc:'#712B13', bg:'#FAECE7' },
+  { bcs:3, fat:15, corr:1.02, label:'마름',       short:'마름',   color:'#EF9F27', tc:'#633806', bg:'#FAEEDA' },
+  { bcs:4, fat:20, corr:1.00, label:'정상하한',   short:'정상-',  color:'#97C459', tc:'#27500A', bg:'#EAF3DE' },
+  { bcs:5, fat:25, corr:1.00, label:'정상',       short:'정상',   color:'#1D9E75', tc:'#04342C', bg:'#E1F5EE' },
+  { bcs:6, fat:30, corr:0.95, label:'정상상한',   short:'정상+',  color:'#378ADD', tc:'#042C53', bg:'#E6F1FB' },
+  { bcs:7, fat:35, corr:0.88, label:'과체중',     short:'과체중', color:'#7F77DD', tc:'#26215C', bg:'#EEEDFE' },
+  { bcs:8, fat:45, corr:0.78, label:'비만',       short:'비만',   color:'#D4537E', tc:'#4B1528', bg:'#FBEAF0' },
+  { bcs:9, fat:55, corr:0.68, label:'고도비만',   short:'고비만', color:'#E24B4A', tc:'#501313', bg:'#FCEBEB' },
 ];
 var catBCS = [
-  { bcs:1, fat:5,  label:'극도저체중', short:'극저',   color:'#F7C1C1', tc:'#791F1F', bg:'#FCEBEB' },
-  { bcs:2, fat:10, label:'저체중',     short:'저체중', color:'#F0997B', tc:'#712B13', bg:'#FAECE7' },
-  { bcs:3, fat:15, label:'마름',       short:'마름',   color:'#EF9F27', tc:'#633806', bg:'#FAEEDA' },
-  { bcs:4, fat:20, label:'정상하한',   short:'정상-',  color:'#97C459', tc:'#27500A', bg:'#EAF3DE' },
-  { bcs:5, fat:25, label:'정상',       short:'정상',   color:'#1D9E75', tc:'#04342C', bg:'#E1F5EE' },
-  { bcs:6, fat:30, label:'정상상한',   short:'정상+',  color:'#378ADD', tc:'#042C53', bg:'#E6F1FB' },
-  { bcs:7, fat:38, label:'과체중',     short:'과체중', color:'#7F77DD', tc:'#26215C', bg:'#EEEDFE' },
-  { bcs:8, fat:46, label:'비만',       short:'비만',   color:'#D4537E', tc:'#4B1528', bg:'#FBEAF0' },
-  { bcs:9, fat:54, label:'고도비만',   short:'고비만', color:'#E24B4A', tc:'#501313', bg:'#FCEBEB' },
+  { bcs:1, fat:5,  corr:1.10, label:'극도저체중', short:'극저',   color:'#F7C1C1', tc:'#791F1F', bg:'#FCEBEB' },
+  { bcs:2, fat:10, corr:1.05, label:'저체중',     short:'저체중', color:'#F0997B', tc:'#712B13', bg:'#FAECE7' },
+  { bcs:3, fat:15, corr:1.02, label:'마름',       short:'마름',   color:'#EF9F27', tc:'#633806', bg:'#FAEEDA' },
+  { bcs:4, fat:20, corr:1.00, label:'정상하한',   short:'정상-',  color:'#97C459', tc:'#27500A', bg:'#EAF3DE' },
+  { bcs:5, fat:25, corr:1.00, label:'정상',       short:'정상',   color:'#1D9E75', tc:'#04342C', bg:'#E1F5EE' },
+  { bcs:6, fat:30, corr:0.95, label:'정상상한',   short:'정상+',  color:'#378ADD', tc:'#042C53', bg:'#E6F1FB' },
+  { bcs:7, fat:38, corr:0.88, label:'과체중',     short:'과체중', color:'#7F77DD', tc:'#26215C', bg:'#EEEDFE' },
+  { bcs:8, fat:46, corr:0.78, label:'비만',       short:'비만',   color:'#D4537E', tc:'#4B1528', bg:'#FBEAF0' },
+  { bcs:9, fat:54, corr:0.68, label:'고도비만',   short:'고비만', color:'#E24B4A', tc:'#501313', bg:'#FCEBEB' },
 ];
 
 function getData() { return species === 'dog' ? dogBCS : catBCS; }
@@ -652,18 +652,16 @@ function getBW() { return parseFloat(document.getElementById('bw-input').value) 
 function getConc() { return parseInt(document.getElementById('conc-select').value); }
 function getRate() { return parseFloat(document.getElementById('rate-slider').value); }
 
+function getCorrectedDose(bcs) {
+  // BCS5(정상) 기준 600 mgI/kg × TBW = 2.0 mL/kg (@ 300 mgI/mL)
+  // 보정계수: BCS5=1.00 기준, 저체중↑ 비만↓
+  var cur = getData().find(function(d){ return d.bcs === bcs; });
+  return 600 * cur.corr;  // 보정된 mgI/kg
+}
 function getRecDose(bcs) {
   var doseSelect = document.getElementById('dose-select').value;
   if (doseSelect !== 'auto') return parseInt(doseSelect);
-  if (species === 'dog') {
-    if (bcs <= 3) return 600;
-    if (bcs <= 6) return 700;
-    return 700;
-  } else {
-    if (bcs <= 3) return 600;
-    if (bcs <= 6) return 660;
-    return 660;
-  }
+  return getCorrectedDose(bcs);
 }
 
 function renderBCSGrid() {
@@ -687,60 +685,64 @@ function renderBCSGrid() {
 
   var cur = getCurrent();
   document.getElementById('bcs-text').textContent =
-    'BCS ' + cur.bcs + ' (' + cur.label + ') — 체지방률 약 ' + cur.fat + '%';
+    'BCS ' + cur.bcs + ' (' + cur.label + ') — 체지방률 약 ' + cur.fat + '% · 보정계수 ' + cur.corr.toFixed(2);
 }
 
 function calc() {
   var bw = getBW();
   var fat = getCurrent().fat;
-  var lbw = bw * (1 - fat / 100);
+  var corr = getCurrent().corr;
+  var adjBW = bw * corr;
   var conc = getConc();
   var recDose = getRecDose(selBCS);
   var stdDose = species === 'dog' ? 600 : 660;
 
   document.getElementById('bw-badge').textContent = bw.toFixed(1) + ' kg';
 
-  var lbwVol = (recDose * lbw / conc);
-  var tbwVol = (stdDose * bw / conc);
-  var diff = tbwVol - lbwVol;
-  var diffPct = tbwVol > 0 ? (diff / tbwVol * 100) : 0;
+  var recVol = stdDose * adjBW / conc;
+  var stdVol = stdDose * bw / conc;
+  var diff = recVol - stdVol;
+  var diffPct = stdVol > 0 ? (diff / stdVol * 100) : 0;
   var maxVol = species === 'dog' ? 150 : 30;
-  var injDur = lbwVol / getRate();
+  var injDur = recVol / getRate();
 
   // result cards
   var rrow = document.getElementById('result-row');
+  var diffLabel = diff > 0.05 ? '▲ ' + diff.toFixed(1) + ' mL 증량' : diff < -0.05 ? '▼ ' + Math.abs(diff).toFixed(1) + ' mL 감량' : '기준 용량';
   rrow.innerHTML =
-    '<div class="result-card"><div class="rc-label">제지방체중 (LBW)</div><div class="rc-val">' + lbw.toFixed(2) + '</div><div class="rc-unit">kg &nbsp;(지방 ' + (bw*fat/100).toFixed(1) + ' kg 제외)</div></div>' +
-    '<div class="result-card primary"><div class="rc-label">권장 조영제 용량</div><div class="rc-val">' + (lbwVol > maxVol ? maxVol.toFixed(1) : lbwVol.toFixed(1)) + '</div><div class="rc-unit">mL &nbsp;(' + recDose + ' mgI/kg × LBW)</div></div>' +
+    '<div class="result-card"><div class="rc-label">보정체중 (TBW × ' + corr.toFixed(2) + ')</div><div class="rc-val">' + adjBW.toFixed(2) + '</div><div class="rc-unit">kg &nbsp;(BCS' + selBCS + ' 보정계수 적용)</div></div>' +
+    '<div class="result-card primary"><div class="rc-label">권장 조영제 용량</div><div class="rc-val">' + (recVol > maxVol ? maxVol.toFixed(1) : recVol.toFixed(1)) + '</div><div class="rc-unit">mL &nbsp;(' + diffLabel + ')</div></div>' +
     '<div class="result-card"><div class="rc-label">주입 예상 시간</div><div class="rc-val">' + injDur.toFixed(0) + '</div><div class="rc-unit">초 &nbsp;(' + getRate().toFixed(1) + ' mL/s 기준)</div></div>';
 
   // alert
   var abox = document.getElementById('alert-box');
-  if (lbwVol > maxVol) {
-    abox.innerHTML = '<div class="alert danger">계산량 ' + lbwVol.toFixed(1) + ' mL이 최대 권장량 ' + maxVol + ' mL을 초과합니다 — ' + maxVol + ' mL로 제한하여 사용하세요.</div>';
+  if (recVol > maxVol) {
+    abox.innerHTML = '<div class="alert danger">계산량 ' + recVol.toFixed(1) + ' mL이 최대 권장량 ' + maxVol + ' mL을 초과합니다 — ' + maxVol + ' mL로 제한하여 사용하세요.</div>';
   } else if (selBCS >= 8) {
-    abox.innerHTML = '<div class="alert warn">BCS ' + selBCS + ' (비만/고도비만): TBW 기준 투여 시 조영 과도 및 신독성 위험이 높습니다. LBW 기준 적용이 강하게 권장됩니다. 절감량: ' + (diff > 0 ? diff.toFixed(1) : 0) + ' mL (' + (diffPct > 0 ? diffPct.toFixed(0) : 0) + '%)</div>';
+    abox.innerHTML = '<div class="alert warn">BCS ' + selBCS + ' (비만/고도비만): 기준 대비 ' + Math.abs(diffPct).toFixed(0) + '% 감량 적용. 조영 과도 및 신독성 위험 감소.</div>';
   } else if (selBCS >= 6) {
-    abox.innerHTML = '<div class="alert info">BCS ' + selBCS + ': LBW 기준 적용 시 TBW 대비 ' + (diff > 0 ? diff.toFixed(1) : 0) + ' mL 절감, 환자 간 조영 변동성 감소.</div>';
+    abox.innerHTML = '<div class="alert info">BCS ' + selBCS + ': 기준 대비 ' + Math.abs(diffPct).toFixed(0) + '% 감량 적용.</div>';
+  } else if (selBCS <= 3) {
+    abox.innerHTML = '<div class="alert info">BCS ' + selBCS + ' (저체중/마름): 기준 대비 ' + diffPct.toFixed(0) + '% 증량 적용.</div>';
   } else {
-    abox.innerHTML = '<div class="alert success">BCS ' + selBCS + ': 정상~저체중 범위 — TBW와 LBW 차이가 작습니다. 두 방법 모두 적용 가능.</div>';
+    abox.innerHTML = '<div class="alert success">BCS ' + selBCS + ' (정상): 기준 용량 TBW × 2.0 mL/kg 적용.</div>';
   }
 
   // formula
   var fatMass = (bw * fat / 100).toFixed(2);
   var formula = document.getElementById('formula-box');
   formula.innerHTML =
-    '<span class="comment">/* 1단계: 제지방체중 (LBW) 계산 */</span>\n' +
-    'LBW  = TBW × (1 − 체지방률 / 100)\n' +
+    '<span class="comment">/* 1단계: 보정체중 계산 */</span>\n' +
+    '보정체중 = TBW × 보정계수(BCS' + selBCS + ')\n' +
     '     = ' + bw.toFixed(1) + ' × (1 − ' + fat + ' / 100)\n' +
     '     = ' + bw.toFixed(1) + ' × ' + (1 - fat/100).toFixed(2) + '\n' +
-    '     = <span class="highlight">' + lbw.toFixed(2) + ' kg</span>  (지방량 ' + fatMass + ' kg 제외)\n\n' +
+    '     = <span class="highlight">' + adjBW.toFixed(2) + ' kg</span>\n\n' +
     '<span class="comment">/* 2단계: 조영제 용량 계산 */</span>\n' +
-    '용량 = 목표 mgI/kg × LBW ÷ 농도\n' +
-    '     = ' + recDose + ' mgI/kg × ' + lbw.toFixed(2) + ' kg ÷ ' + conc + ' mgI/mL\n' +
-    '     = <span class="highlight">' + lbwVol.toFixed(1) + ' mL</span>' + (lbwVol > maxVol ? '  → 상한 적용: <span class="highlight">' + maxVol + ' mL</span>' : '') + '\n\n' +
+    '용량 = 600 mgI/kg × 보정체중 ÷ 농도\n' +
+    '     = 600 × ' + adjBW.toFixed(2) + ' ÷ ' + conc + '\n' +
+    '     = <span class="highlight">' + recVol.toFixed(1) + ' mL</span>' + (recVol > maxVol ? '  → 상한 적용: <span class="highlight">' + maxVol + ' mL</span>' : '') + '\n\n' +
     '<span class="comment">/* 3단계: 주입 시간 */</span>\n' +
-    '주입시간 = ' + (lbwVol > maxVol ? maxVol : lbwVol).toFixed(1) + ' mL ÷ ' + getRate().toFixed(1) + ' mL/s\n' +
+    '주입시간 = ' + (recVol > maxVol ? maxVol : recVol).toFixed(1) + ' mL ÷ ' + getRate().toFixed(1) + ' mL/s\n' +
     '        = <span class="highlight">' + injDur.toFixed(0) + '초</span>';
 }
 
@@ -752,28 +754,30 @@ function renderRefTable() {
   var maxVol = species === 'dog' ? 150 : 30;
 
   var html = '<thead><tr>' +
-    '<th>BCS</th><th>분류</th><th>체지방률</th><th>LBW (kg)</th>' +
-    '<th>LBW 기준<br>용량 (mL)</th><th>TBW 기준<br>용량 (mL)</th><th>절감량</th><th>비고</th>' +
+    '<th>BCS</th><th>분류</th><th>보정계수</th><th>보정체중 (kg)</th>' +
+    '<th>권장 용량 (mL)</th><th>기준 용량<br>(BCS5, mL)</th><th>증감</th><th>비고</th>' +
     '</tr></thead><tbody>';
 
   data.forEach(function(d) {
-    var lbw = bw * (1 - d.fat / 100);
-    var recDose = getRecDose(d.bcs);
-    var lbwVol = recDose * lbw / conc;
-    var tbwVol = stdDose * bw / conc;
-    var diff = tbwVol - lbwVol;
-    var diffPct = diff / tbwVol * 100;
-    var overMax = lbwVol > maxVol;
-    var note = overMax ? '★ 상한 적용 ' + maxVol + ' mL' : (d.bcs >= 7 ? 'LBW 강권' : d.bcs <= 3 ? 'TBW≈LBW' : '');
+    var adjBW = bw * d.corr;
+    var recVol = stdDose * adjBW / conc;
+    var baseVol = stdDose * bw / conc;  // BCS5 기준
+    var diff = recVol - baseVol;
+    var diffPct = diff / baseVol * 100;
+    var overMax = recVol > maxVol;
+    var diffStr = Math.abs(diff) < 0.05 ? '기준' :
+      diff > 0 ? '<span style="color:var(--dog)">▲+' + diff.toFixed(1) + ' (' + diffPct.toFixed(0) + '%)</span>' :
+                 '<span style="color:var(--cat)">▼' + diff.toFixed(1) + ' (' + diffPct.toFixed(0) + '%)</span>';
+    var note = overMax ? '★ 상한 ' + maxVol + ' mL' : (d.bcs >= 7 ? '비만 감량' : d.bcs <= 3 ? '저체중 증량' : '기준');
     var cls = d.bcs === selBCS ? (species === 'dog' ? ' class="selected"' : ' class="selected-cat"') : '';
     html += '<tr' + cls + '>' +
       '<td style="font-family:var(--mono);font-weight:500;">' + d.bcs + '</td>' +
       '<td>' + d.label + '</td>' +
-      '<td style="font-family:var(--mono);">' + d.fat + '%</td>' +
-      '<td style="font-family:var(--mono);">' + lbw.toFixed(2) + '</td>' +
-      '<td style="font-family:var(--mono);font-weight:500;">' + (overMax ? maxVol.toFixed(1) : lbwVol.toFixed(1)) + '</td>' +
-      '<td style="font-family:var(--mono);color:var(--text3);">' + tbwVol.toFixed(1) + '</td>' +
-      '<td style="font-family:var(--mono);color:' + (diff > 0 ? 'var(--cat)' : 'var(--text3)') + ';">' + (diff > 0 ? '−' + diff.toFixed(1) + ' (' + diffPct.toFixed(0) + '%)' : '±0') + '</td>' +
+      '<td style="font-family:var(--mono);">' + d.corr.toFixed(2) + '</td>' +
+      '<td style="font-family:var(--mono);">' + adjBW.toFixed(2) + '</td>' +
+      '<td style="font-family:var(--mono);font-weight:500;">' + (overMax ? maxVol.toFixed(1) : recVol.toFixed(1)) + '</td>' +
+      '<td style="font-family:var(--mono);color:var(--text3);">' + baseVol.toFixed(1) + '</td>' +
+      '<td>' + diffStr + '</td>' +
       '<td style="font-size:11px;color:var(--text3);">' + note + '</td>' +
       '</tr>';
   });
@@ -782,7 +786,7 @@ function renderRefTable() {
 
   var conc_label = document.getElementById('conc-select').options[document.getElementById('conc-select').selectedIndex].text;
   document.getElementById('ref-note').textContent =
-    '기준: ' + conc_label + ' · ' + (species === 'dog' ? 'LBW 기준 700 mgI/kg (BCS≥4), 600 mgI/kg (BCS≤3)' : 'LBW 기준 660 mgI/kg · 최대 ' + maxVol + ' mL') +
+    '기준: ' + conc_label + ' · BCS5(정상) = 600 mgI/kg × TBW = 2.0 mL/kg · 저체중 증량 / 비만 감량 · 최대 ' + maxVol + ' mL' +
     ' · 현재 선택 BCS ' + selBCS + ' 행이 강조 표시됨';
 }
 
@@ -791,7 +795,7 @@ function renderProtocol() {
   var bw = getBW();
   var conc = getConc();
   var fat = getCurrent().fat;
-  var lbw = (bw * (1 - fat/100)).toFixed(1);
+  // lbw not needed in ref table
   var rate = getRate().toFixed(1);
 
   var grid = document.getElementById('protocol-grid');
